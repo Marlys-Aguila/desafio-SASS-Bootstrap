@@ -15,6 +15,7 @@ main {
 }  
 
 .card {
+    width: 22rem;
     padding: 0.8rem;
     @extend .bg-dark;
 
@@ -24,14 +25,17 @@ main {
 
     .card-title {
         @extend .text-pink;
+        font-size: 3rem;
     }
 
     .card-text {
         @extend .text-light;
+        font-size: 1.3rem;
     }
 
     .btn {
         @extend .bg-pink;
+        font-size: 1.2rem;
     }
 }
 

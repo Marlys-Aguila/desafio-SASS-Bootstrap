@@ -1,32 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap");
-.flex-center, main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-main {
-  height: 100vh;
-}
-
-.card {
-  width: 22rem;
-  padding: 0.8rem;
-}
-.card img {
-  padding: 1rem;
-}
-.card .card-title {
-  font-size: 3rem;
-}
-.card .card-text {
-  font-size: 1.3rem;
-}
-.card .btn {
-  font-size: 1.2rem;
-}
-
 /*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -65,7 +37,6 @@ main {
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-pink: #CD6799;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -74,12 +45,11 @@ main {
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
-  --bs-pink-rgb: 205, 103, 153;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Vujahday Script", cursive;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -100,7 +70,7 @@ main {
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #0d6efd;
   --bs-link-hover-color: #0a58ca;
-  --bs-code-color: #CD6799;
+  --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
 
@@ -2958,23 +2928,6 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #212529;
 }
 
-.btn-pink {
-  --bs-btn-color: #000;
-  --bs-btn-bg: #CD6799;
-  --bs-btn-border-color: #CD6799;
-  --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #d57ea8;
-  --bs-btn-hover-border-color: #d276a3;
-  --bs-btn-focus-shadow-rgb: 174, 88, 130;
-  --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #d785ad;
-  --bs-btn-active-border-color: #d276a3;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #CD6799;
-  --bs-btn-disabled-border-color: #CD6799;
-}
-
 .btn-outline-primary {
   --bs-btn-color: #0d6efd;
   --bs-btn-border-color: #0d6efd;
@@ -3108,23 +3061,6 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #212529;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #212529;
-  --bs-gradient: none;
-}
-
-.btn-outline-pink {
-  --bs-btn-color: #CD6799;
-  --bs-btn-border-color: #CD6799;
-  --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #CD6799;
-  --bs-btn-hover-border-color: #CD6799;
-  --bs-btn-focus-shadow-rgb: 205, 103, 153;
-  --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #CD6799;
-  --bs-btn-active-border-color: #CD6799;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #CD6799;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #CD6799;
   --bs-gradient: none;
 }
 
@@ -4739,15 +4675,6 @@ textarea.form-control-lg {
   color: #101214;
 }
 
-.alert-pink {
-  --bs-alert-color: #7b3e5c;
-  --bs-alert-bg: #f5e1eb;
-  --bs-alert-border-color: #f0d1e0;
-}
-.alert-pink .alert-link {
-  color: #62324a;
-}
-
 @keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -5150,20 +5077,6 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #141619;
   border-color: #141619;
-}
-
-.list-group-item-pink {
-  color: #7b3e5c;
-  background-color: #f5e1eb;
-}
-.list-group-item-pink.list-group-item-action:hover, .list-group-item-pink.list-group-item-action:focus {
-  color: #7b3e5c;
-  background-color: #ddcbd4;
-}
-.list-group-item-pink.list-group-item-action.active {
-  color: #fff;
-  background-color: #7b3e5c;
-  border-color: #7b3e5c;
 }
 
 .btn-close {
@@ -6721,11 +6634,6 @@ textarea.form-control-lg {
   background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
 }
 
-.text-bg-pink {
-  color: #000 !important;
-  background-color: RGBA(205, 103, 153, var(--bs-bg-opacity, 1)) !important;
-}
-
 .link-primary {
   color: #0d6efd !important;
 }
@@ -6780,13 +6688,6 @@ textarea.form-control-lg {
 }
 .link-dark:hover, .link-dark:focus {
   color: #1a1e21 !important;
-}
-
-.link-pink {
-  color: #CD6799 !important;
-}
-.link-pink:hover, .link-pink:focus {
-  color: #d785ad !important;
 }
 
 .ratio {
@@ -7248,11 +7149,6 @@ textarea.form-control-lg {
 .border-dark {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-dark-rgb), var(--bs-border-opacity)) !important;
-}
-
-.border-pink {
-  --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-pink-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-white {
@@ -8107,7 +8003,7 @@ textarea.form-control-lg {
   color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-light, .card .card-text {
+.text-light {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
 }
@@ -8115,11 +8011,6 @@ textarea.form-control-lg {
 .text-dark {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
-}
-
-.text-pink, .card .card-title {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-pink-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-black {
@@ -8208,14 +8099,9 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-dark, .card {
+.bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
-}
-
-.bg-pink, .card .btn {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-pink-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {
